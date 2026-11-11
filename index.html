@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>KameyMall spreadsheet : liens, tailles et photos QC</title>
+<meta name="description" content="Guide KameyMall spreadsheet en français : explorez dix catégories, comparez les tailles et les photos QC, puis estimez le coût livré avant de choisir.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="KameyMall spreadsheet : liens, tailles et photos QC">
+<meta property="og:description" content="Dix catégories et une méthode pour comparer les fiches produit, les mesures, les photos QC et le coût livré.">
+<!-- index.html. Étude SEO : la première page de Google France n’a pas pu être vérifiée. Dix domaines ont servi à repérer les intentions de recherche dans les résultats web disponibles. Titres et extraits synthétisés par thème :
+Catalogue, catégories et liens : https://kameymall-sheet.com/ ; https://www.kameymallchina.com/ ; https://www.jadeship.com/spreadsheets/category/store
+Recherche produit, variantes et mesures : https://chinareptools.com/spreadsheet-search-kameymall ; https://kameymallsheet.com/ ; https://kameymallindex.com/en/categories
+Photos QC, colis et livraison : https://www.kameymalltable.com/ ; https://kameymallspreadsheet.org/ ; https://www.reddit.com/r/repbudgetsneakers/comments/15wo3nj
+Vérification du domaine : https://www.scamadviser.com/check-website/kameymallspreadsheet.com
+Requêtes secondaires : guide KameyMall en français ; liens produits KameyMall ; photos QC KameyMall ; livraison KameyMall en France.
+24 pistes longue traîne : vérifier un lien produit Weidian ; retrouver la référence d’une annonce Taobao ; comparer les variantes sur 1688 ; mesurer une semelle intérieure en centimètres ; convertir une pointure EU ; comparer deux largeurs de pied ; mesurer un sweat à plat ; vérifier la largeur poitrine d’un tee-shirt ; mesurer la longueur de manche d’une veste ; comparer la hauteur d’entrejambe d’un pantalon ; mesurer le tour de tête pour une casquette ; vérifier la taille des deux pièces d’un ensemble ; contrôler l’élasticité d’une ceinture ; vérifier le flocage d’un maillot ; mesurer le tour de poignet pour un bracelet ; demander une photo QC avec une règle ; vérifier les coutures en gros plan ; comparer deux coloris sous le même éclairage ; identifier la variante sur l’étiquette ; calculer le coût total livré en euros ; comparer le poids réel et le poids volumétrique ; estimer les frais d’expédition vers la France ; vérifier les frais à la livraison ; lire les conditions de retour avant achat. -->
+<style>
+:root{color-scheme:light;--bg:#f6f3eb;--ink:#242320;--accent:#772742;--line:#d8ccc3;--paper:#fffdf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+header,main,footer{width:min(72rem,calc(100% - 2rem));margin:auto}
+header,footer{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 0}
+header{border-bottom:1px solid var(--line)}
+a{color:var(--accent);text-underline-offset:.18em}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.brand{font-weight:800;color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1rem,4vw,4rem);align-items:center;padding:clamp(1.5rem,5vw,4rem) 0 1.5rem}
+h1,h2,h3,p{margin:0 0 .75rem}
+h1{font:700 clamp(2.25rem,6vw,5rem)/1 Georgia,serif;letter-spacing:-.045em;overflow-wrap:anywhere}
+h2{font:700 clamp(1.65rem,4vw,2.5rem)/1.15 Georgia,serif}
+h3{line-height:1.25}
+.hero p{max-width:49ch}
+.cta{display:inline-block;padding:.65rem 1rem;border-radius:.35rem;background:var(--accent);color:white;font-weight:700}
+figure{margin:0}
+img{display:block;width:100%;height:auto}
+.hero img{aspect-ratio:4/3;object-fit:contain;background:#eee9e2;border-radius:.6rem}
+figcaption{padding:.4rem 0;font-size:.86rem}
+section,nav{margin:0 0 2.5rem}
+.categories{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr));gap:.5rem}
+.categories a{display:flex;align-items:center;min-height:3rem;padding:.45rem .75rem;background:var(--paper);border:1px solid var(--line);border-radius:.35rem;font-weight:650}
+.gallery,.articles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}
+.gallery img{aspect-ratio:4/3;object-fit:contain;background:#eee9e2;border-radius:.4rem}
+article{padding:1rem;background:var(--paper);border-top:3px solid var(--accent)}
+article p:last-child{margin-bottom:0}
+table{width:100%;border-collapse:collapse;background:var(--paper)}
+caption{text-align:left;padding:0 0 .4rem}
+th,td{padding:.65rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead{background:#eadde0}
+details{padding:.75rem 0;border-top:1px solid var(--line)}
+details p{margin:.5rem 0 0;max-width:70ch}
+summary{cursor:pointer;font-weight:700}
+footer{border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:42rem){.hero{grid-template-columns:1fr}.hero img{max-height:14rem}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "inLanguage":"fr",
+      "name":"KameyMall spreadsheet : liens, tailles et photos QC",
+      "description":"Guide KameyMall spreadsheet en français : explorez dix catégories, comparez les tailles et les photos QC, puis estimez le coût livré avant de choisir."
+    },
+    {
+      "@type":"FAQPage",
+      "inLanguage":"fr",
+      "mainEntity":[
+        {"@type":"Question","name":"À quoi sert un KameyMall spreadsheet ?","acceptedAnswer":{"@type":"Answer","text":"Il sert à repérer des liens produits et à comparer des variantes. Ouvrez la fiche source pour confirmer la référence, la taille et la disponibilité."}},
+        {"@type":"Question","name":"Que regarder sur les photos QC ?","acceptedAnswer":{"@type":"Answer","text":"Vérifiez la variante, les étiquettes, les coutures et les mesures visibles. Demandez une photo avec une règle si une dimension compte pour votre choix."}},
+        {"@type":"Question","name":"Comment comparer le coût d’une livraison en France ?","acceptedAnswer":{"@type":"Answer","text":"Comparez en euros le prix de l’article, le port, les frais de service et les éventuels frais à la livraison. Vérifiez le poids facturé et la destination dans le devis."}},
+        {"@type":"Question","name":"Où mènent les liens de ce guide ?","acceptedAnswer":{"@type":"Answer","text":"Ils ouvrent les catégories ou l’accueil de cafans.com. Les photos de marques illustrent les critères de choix. Ce guide est indépendant de KameyMall et des marques citées."}}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/qoaoc/">
+</head>
+<body>
+<header>
+  <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+  <span>Guide indépendant d’achat</span>
+</header>
+<main>
+  <section class="hero" aria-labelledby="titre">
+    <div>
+      <h1 id="titre">KameyMall spreadsheet</h1>
+      <p>Un tableur aide à repérer des articles. Pour choisir entre deux annonces, vérifiez la référence, comparez les mesures et les photos de contrôle qualité (QC), puis calculez le coût livré.</p>
+      <a class="cta" href="https://www.cafans.com">Voir le catalogue Cafans</a>
+    </div>
+    <figure>
+      <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/f888b4a3-a02a-420d-93e3-cb33c3bb30ac/AIR%2BFORCE%2B1%2B%2707.png" alt="Nike Air Force 1 ’07 blanche à semelle blanche" width="600" height="450" fetchpriority="high">
+      <figcaption>Nike Air Force 1 ’07. Sur une paire similaire, comparez la longueur intérieure et la largeur à l’avant du pied.</figcaption>
+    </figure>
+  </section>
+
+  <nav aria-labelledby="categories">
+    <h2 id="categories">Explorer par catégorie</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Chaussures</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Vestes</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalons et shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Casquettes et bonnets</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Ensembles</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Sous-vêtements</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Maillots</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+    </ul>
+  </nav>
+
+  <section aria-labelledby="mesures">
+    <h2 id="mesures">Choisir la bonne mesure</h2>
+    <table>
+      <caption>Mesures et détails à noter avant de retenir une variante</caption>
+      <thead><tr><th scope="col">Article</th><th scope="col">À relever</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Chaussures</th><td>Pointure EU, longueur de la semelle intérieure en centimètres et largeur à l’avant.</td></tr>
+        <tr><th scope="row">T-shirts, sweats et vestes</th><td>Largeur poitrine à plat, longueur totale et longueur de manche.</td></tr>
+        <tr><th scope="row">Pantalons et ensembles</th><td>Tour de taille, entrejambe et taille de chacune des pièces.</td></tr>
+        <tr><th scope="row">Maillots et sous-vêtements</th><td>Position du flocage sur le maillot et élasticité de la ceinture du sous-vêtement.</td></tr>
+        <tr><th scope="row">Casquettes et bijoux</th><td>Tour de tête, plage de réglage, tour de poignet et type de fermoir.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section aria-labelledby="photos">
+    <h2 id="photos">Les détails à regarder en photo</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://media.gucci.com/style/DarkGray_Center_0_0_2400x2400/1743440415/796395_XJHDB_9074_003_100_0000_Light-.jpg" alt="T-shirt Gucci blanc à motif bleu sur le devant" width="480" height="360" loading="lazy" decoding="async">
+        <figcaption>Gucci. Une vue de face aide à situer le motif par rapport au col.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.vestiairecollective.com/images/resized/w%3D2920%2Cq%3D75%2Cf%3Dauto%2C/produit/black-other-louis-vuitton-hat-25262143-9_3.jpg" alt="Casquette Louis Vuitton noire à visière monogrammée brune" width="480" height="360" loading="lazy" decoding="async">
+        <figcaption>Louis Vuitton. Demandez aussi une vue de la bande intérieure et du réglage.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png" alt="Bracelet Hermès Clic H orange à fermoir doré" width="480" height="360" loading="lazy" decoding="async">
+        <figcaption>Hermès. Vérifiez l’ouverture du fermoir et la circonférence intérieure.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/gold-jewelry-cover-1608606282.jpg?crop=0.504xw%3A1.00xh%3B0.00979xw%2C0&amp;resize=640%3A%2A" alt="Composition de bijoux dorés comprenant une bague aux initiales CD de Dior" width="480" height="360" loading="lazy" decoding="async">
+        <figcaption>Dior. Pour une bague, relevez le diamètre intérieur de la taille choisie.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="guides">
+    <h2 id="guides">Guide KameyMall en français</h2>
+    <div class="articles">
+      <article>
+        <h3>Liens produits KameyMall : retrouver la bonne variante</h3>
+        <p>Relevez la référence de l’annonce Weidian, Taobao ou 1688, puis ouvrez la fiche et sélectionnez le coloris et la taille voulus. Notez ces informations et la date de vérification. Si la référence a changé, comparez les mesures et les photos de la nouvelle fiche avant de la retenir.</p>
+      </article>
+      <article>
+        <h3>Photos QC KameyMall : vérifier les mesures</h3>
+        <p>Pour un sweat, comparez la largeur poitrine à plat avec celle d’un vêtement qui vous va. Demandez une photo avec une règle si le tableau des tailles laisse un doute. Pour une paire de chaussures, demandez la vue des deux semelles et l’étiquette de pointure. Une photo peut documenter l’état visible. L’authenticité demande des justificatifs distincts.</p>
+      </article>
+      <article>
+        <h3>Livraison KameyMall en France : estimer le coût livré</h3>
+        <p>Sur une même base en euros, additionnez le prix de l’article, les frais de service, le transport et les éventuels frais à la réception. Comparez le poids réel et le poids volumétrique selon le mode d’expédition. Vérifiez la destination et les conditions de retour avant de retenir le devis.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="questions">
+    <h2 id="questions">Questions fréquentes</h2>
+    <details open><summary>À quoi sert un KameyMall spreadsheet ?</summary><p>Il sert à repérer des liens produits et à comparer des variantes. Ouvrez la fiche source pour confirmer la référence, la taille et la disponibilité.</p></details>
+    <details><summary>Que regarder sur les photos QC ?</summary><p>Vérifiez la variante, les étiquettes, les coutures et les mesures visibles. Demandez une photo avec une règle si une dimension compte pour votre choix.</p></details>
+    <details><summary>Comment comparer le coût d’une livraison en France ?</summary><p>Comparez en euros le prix de l’article, le port, les frais de service et les éventuels frais à la livraison. Vérifiez le poids facturé et la destination dans le devis.</p></details>
+    <details><summary>Où mènent les liens de ce guide ?</summary><p>Ils ouvrent les catégories ou l’accueil de cafans.com. Les photos de marques illustrent les critères de choix. Ce guide est indépendant de KameyMall et des marques citées.</p></details>
+  </section>
+</main>
+<footer>
+  <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+  <span>Guide indépendant de KameyMall et des marques citées.</span>
+</footer>
+</body>
+</html>
